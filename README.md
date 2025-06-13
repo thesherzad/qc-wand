@@ -52,5 +52,5 @@ R Markdown for documentation and automation
 
 📎 Disclaimer
 
-This repository is for educational and prototyping purposes only. Any AI-generated output must be reviewed and validated by a qualified clinical programmer or statistician before use in regulated workflows. And thanks to ChatGPT for assisting me to generate this README content :)
+This repository is for educational and prototyping purposes only. Any AI-generated output must be reviewed and validated by a qualified clinical programmer or statistician before use in regulated workflows. And thanks to ChatGPT for assisting me to write this README content :)
 
