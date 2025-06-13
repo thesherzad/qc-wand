@@ -1,5 +1,7 @@
 AI-Assisted QC for Clinical Analysis Ready Datasets
 
+In order to run this project on your own device, you need to have an API Key from an LLM provider (OpenAI is recommended). Store the key in your .Renviron file as `OPENAI_API_KEY`. Read `ellmer` package documentation how to setup a key here: https://ellmer.tidyverse.org/
+
 This repository demonstrates how to use Large Language Models (LLMs) like ChatGPT to automate and assist with Quality Control (QC) tasks in creating clinical Analysis Ready Datasets (ARDs), particularly in highly regulated environments such as the pharmaceutical industry.
 
 It includes examples of:
