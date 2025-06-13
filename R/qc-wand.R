@@ -1,10 +1,20 @@
 
-# create concise chat content
+#' Create concise chat content
+#'
+#' @param var character vector, list of variables from specs 
+#' @param instruction character vector, list of instruction from specs
+#'
+#' @returns character vector, combined variable=instruction
 specs_to_chat <- function(var, instruction){
   paste0("\n", var, "=", instruction)
 }
 
-# generate and clean R code based on specs' instructions
+#' Generate and clean R code based on specs' instructions
+#'
+#' @inheritParams specs_to_chat
+#'
+#' @returns R code
+#' @example generate_code(specs$variable_name, specs$instruction)
 generate_code <- function(var, instruction){
   
   # specs to chat
@@ -33,7 +43,11 @@ specs <- openxlsx2::read_xlsx("input/PopPK_TV_Analysis_Dataset_Specification.xls
   janitor::clean_names()
 
 # 2. create a good prompt ----
-# create the prompt containing some context info -----
+#' Create the prompt containing some context info
+#'
+#' @param df_list named list, list of data frames to include their contents in the markdown
+#'
+#' @examples create_prompt(DM, EX, PC, LB)
 create_prompt <- function(df_list){
   
   saveRDS(df_list, "inst/data_list.rds")
